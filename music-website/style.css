@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+body {
+  background: black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  letter-spacing: 0.19px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title{
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    font-weight:900;
+    color: #d0c5a5;
+}
+
+.home-bar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.home-bar img {
+  width: 350px;
+}
+
+.navbar {
+  color: #f0e8ce;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f0e8ce;
+  font-family: "Mulish", sans-serif;
+  font-weight: 200;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f0e8ce;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.img-album {
+  margin-top: 30px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.album {
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  color: #f0e8ce;
+  text-align: center;
+  font-size: 1.429em;
+  line-height: 1.4;
+  font-weight: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.banner-p {
+  text-transform: uppercase;
+  letter-spacing: 0.19px;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.buy-now {
+  border-radius: 50px;
+  border: 2px solid #f0e8ce;
+  padding: 15px 30px;
+  font-size: 15px;
+  color: #f0e8ce;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.buy-now:hover {
+  background-color: #f0e8ce;
+  color: black;
+  border-color: #d0c5a5;
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.of-store {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #f0e8ce;
+  margin-bottom: 20px;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.web,
+.targ {
+  width: 300px;
+  height: auto;
+}
+
+.webstore,
+.target {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #f0e8ce;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.shop-now {
+  border-radius: 50px;
+  border: 2px solid #f0e8ce;
+  padding: 15px 30px;
+  font-size: 15px;
+  color: #f0e8ce;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.shop-now:hover {
+  background-color: #f0e8ce;
+  color: black;
+  border-color: #d0c5a5;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.video-frame {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  border-radius: 8px;
+}
+
+.listen-now {
+  border-radius: 50px;
+  border: 2px solid #f0e8ce;
+  padding: 15px 30px;
+  font-size: 15px;
+  color: #f0e8ce;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.listen-now:hover {
+  background-color: #f0e8ce;
+  color: black;
+  border-color: #f0e8ce;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  width: 360px;
+  height: 40px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.subscription .add-email {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  width: 100px;
+  border: none;
+  border-radius: 60px;
+  outline: none;
+  margin: 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #f0e8ce;
+  color: black;
+  font-family: inherit;
+  transition: width 0.35s ease-in-out, background 0.35s ease-in-out;
+}
+
+.subscription.done .submit-email {
+  width: calc(100% - 2px);
+  background: #f0e8ce;
+  color: black;
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 38px;
+  transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+  transition-delay: 0.35s;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer {
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-icons {
+    margin-bottom: 15px;
+  }
+  
+  .footer-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+  }
+  
+  .footer-icon img {
+    width: 24px;
+    height: auto;
+  }
+  
+  .footer-text {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+  }
+  
+  .footer-link {
+    color: #f0e8ce;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
